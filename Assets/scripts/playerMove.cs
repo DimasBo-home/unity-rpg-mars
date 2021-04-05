@@ -14,6 +14,10 @@ public class playerMove : MonoBehaviour
     private RaycastHit hit;
     private Animator animator;
     private Vector3 movePosition;
+    [SerializeField]
+    private AudioClip clipAtaka;
+    [SerializeField]
+    private AudioClip clipStep;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +41,14 @@ public class playerMove : MonoBehaviour
         animator.SetBool("is_run", (int)agent.velocity.magnitude > 0);
         zproia.SetActive(is_visible_zproia);
         if (Input.GetMouseButtonDown(1))
+        {
+            print(clipAtaka);
+            audio_control.playClip(clipAtaka);
             animator.SetTrigger("is_ataka");
+        }
+    }
+    void Step()
+    {
+        audio_control.playClip(clipStep);
     }
 }

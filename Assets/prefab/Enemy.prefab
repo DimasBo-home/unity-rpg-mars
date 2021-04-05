@@ -22,6 +22,25 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &914880076303928065
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8905871213007240602}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a01c889b272ed3947a3d9e5710f104db, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8907073883713326348
 GameObject:
   m_ObjectHideFlags: 0
@@ -1557,5 +1576,10 @@ GameObject:
 --- !u!4 &8902609413257233616 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4543829338664524, guid: 0814aba0a5f87494cb000251ab82361f, type: 3}
+  m_PrefabInstance: {fileID: 8907073883372890780}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8905871213007240602 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1207467848881926, guid: 0814aba0a5f87494cb000251ab82361f, type: 3}
   m_PrefabInstance: {fileID: 8907073883372890780}
   m_PrefabAsset: {fileID: 0}
